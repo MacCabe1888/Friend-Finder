@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FriendFinder</title>
+          
+  <!-- latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+  <div class="container">
+
+    <h2>Survey Questions</h2>
+
+    <hr>
+    
+    <h3><strong>About You</strong></h3>
+
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to Photo (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>On a scale from 1 to 5, how important is music in your everyday life?</h4>
+    <select id="q1">
+      <option value=""></option>
+      <option value="1">1 ("Not at all.")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("Could you repeat that? I had my headphones on.")</option>
+    </select>
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>Cats or dogs?</h4>
+    <select id="q2">
+      <option value=""></option>
+      <option value="1">"I'm a cat person."</option>
+      <option value="2">"I somewhat prefer cats."</option>
+      <option value="3">"I'm a CatDog person."</option>
+      <option value="4">"I somewhat prefer dogs."</option>
+      <option value="5">"I'm a dog person."</option>
+    </select>
+
+    <h3><strong>Question 3</strong></h3>
+    <h4>Which of the following best describes you on a typical weekend?</h4>
+    <select id="q3">
+      <option value=""></option>
+      <option value="1">recluse</option>
+      <option value="2">homebody</option>
+      <option value="3">ambivert</option>
+      <option value="4">party animal</option>
+      <option value="5">creature of the night</option>
+    </select>
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>In your opinion, how important is it to study other cultures and/or foreign languages?</h4>
+    <select id="q4">
+      <option value=""></option>
+      <option value="1">1 ("Meh.")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("C'est obligatoire!")</option>
+    </select>
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>Sports or video games?</h4>
+    <select id="q5">
+      <option value=""></option>
+      <option value="1">1 ("I strongly prefer sports.")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("I strongly prefer video games.")</option>
+    </select>
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>How do you feel about intellectual conversations concerning art, philosophy, etc.?</h4>
+    <select id="q6">
+      <option value=""></option>
+      <option value="1">1 ("No, thanks.")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("Well, first of all, what is it to "feel," ultimately? If we consider the position of epiphenomenalism, [...]")</option>
+    </select>
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>In a discussion, should truth be more important than people's sensitivities? On a scale from 1 to 5:</h4>
+    <select id="q7">
+      <option value=""></option>
+      <option value="1">1 ("Never.")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("Always. Facts don't care about your feelings.")</option>
+    </select>
+
+    <h3><strong>Question 8</strong></h3>
+    <h4>On a scale from 1 to 5, how often do you find yourself transported by fantasies and big ideas?</h4>
+    <select id="q8">
+      <option value=""></option>
+      <option value="1">1 ("Never.")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("Sorry, what was that? My mind was elsewhere.")</option>
+    </select>
+
+    <h3><strong>Question 9</strong></h3>
+    <h4>On a scale from 1 to 5, how comfortable are you with morbid subject matter (as in dark humor, horror, etc.)?</h4>
+    <select id="q9">
+      <option value=""></option>
+      <option value="1">1 ("No! God, please no! No! No!")</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 ("It's to die for!")</option>
+    </select>
+
+    <h3><strong>Question 10</strong></h3>
+    <h4>How often do you travel?</h4>
+    <select id="q10">
+      <option value=""></option>
+      <option value="1">never</option>
+      <option value="2">once every few years</option>
+      <option value="3">at least once a year</option>
+      <option value="4">multiple times a year</option>
+      <option value="5">always on the road</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- "Submit" button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+
+    <hr>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/MacCabe1888/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    // Capture the form inputs.
+    $("#submit").on("click", function(event) {
+
+      event.preventDefault();
+
+      // form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        $(".chosen-select").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled in,
+      if (validateForm()) {
+
+        // create an object for the user's data.
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function(data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match.
+          $("#results-modal").modal("toggle");
+
+        });
+    
+      } else {
+        alert("Please complete all the fields before submitting!");
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>
