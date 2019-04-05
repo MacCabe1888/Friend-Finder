@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const friends = require("../data/friends");
+const fs = require("fs");
 
 router.get("/api/friends", (req, res) => {
   return res.json(friends);
@@ -26,6 +27,12 @@ router.post("/api/friends", (req, res) => {
   let closestMatch = friends[differences.indexOf(Math.min(...differences))];
 
   friends.push(newFriend);
+
+  fs.writeFile(__dirname + "/../data/friends.js", `const friends = ${JSON.stringify(friends)};\n\nmodule.exports = friends;\n`, function(err) {
+    if (err) throw err;
+  });
+
+  console.log(friends);
 
   return res.json(closestMatch);
 
