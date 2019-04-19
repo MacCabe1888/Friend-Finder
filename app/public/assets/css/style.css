@@ -1,0 +1,38 @@
+body {
+    background: url(/assets/images/background.jpg);
+}
+
+.container, .jumbotron {
+    background-color: #ffeadd;
+    opacity: 0.95;
+    overflow: hidden;
+}
+
+hr {
+    background-color: #000000;
+    height: 1px;
+    border: 0;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active:focus {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+p {
+    font-weight: bold;
+}
+
+.modal-header, .modal-footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.modal-body {
+    background-color: #ffeadd;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active:focus {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
